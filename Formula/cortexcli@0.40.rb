@@ -1,28 +1,28 @@
 class CortexcliAT040 < Formula
   desc "Cortex CLI"
   homepage "https://docs-cortex.paloaltonetworks.com/"
-  version "0.40.1"
+  version "0.40.0"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/evyatarpalo/paloalto/releases/download/v0.40.1/cortexcli-0.38.1-darwin-arm64.tar.gz"
-      sha256 "97934ec71f13b85d0bef9d53f39da26ce8f2b8375557b378747bf614ac303a4b"
+      url "https://github.com/evyatarpalo/paloalto/releases/download/v0.40.0/cortexcli-0.40.0-darwin-arm64.tar.gz"
+      sha256 "cf3bcdb703379655786dc732ed5d9cc3ad68b47883e582c7963c098e07826b37"
     end
     on_intel do
-      url "https://github.com/evyatarpalo/paloalto/releases/download/v0.40.1/cortexcli-0.38.1-darwin-amd64.tar.gz"
-      sha256 "64b96a0c582c871ff7010bb82c3477d34c93080e6c826b202a202357be6e387d"
+      url "https://github.com/evyatarpalo/paloalto/releases/download/v0.40.0/cortexcli-0.40.0-darwin-amd64.tar.gz"
+      sha256 "1000a13e9704b2cdc28333c89a2f6d8cdfb8dccc18cce392082944bf893232be"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/evyatarpalo/paloalto/releases/download/v0.40.1/cortexcli-0.38.1-linux-arm64.tar.gz"
-      sha256 "50f25de08b2668ee0cb5d3f94726871c4f936f1e2ef838c993fa9926c78c9ecb"
+      url "https://github.com/evyatarpalo/paloalto/releases/download/v0.40.0/cortexcli-0.40.0-linux-arm64.tar.gz"
+      sha256 "c9eb39901425faa3857b597c67d8a8654327b8e4e11ace6c57749f65be19bab0"
     end
     on_intel do
-      url "https://github.com/evyatarpalo/paloalto/releases/download/v0.40.1/cortexcli-0.38.1-linux-amd64.tar.gz"
-      sha256 "c0d6713cb0be60c41092feb130aa37907a7154d48fab47ef19ff3ba6d2fdce4a"
+      url "https://github.com/evyatarpalo/paloalto/releases/download/v0.40.0/cortexcli-0.40.0-linux-amd64.tar.gz"
+      sha256 "76f4d94002410d86190507594af6b3e65020843f3aeb7c21a7820fdeb0e28da7"
     end
   end
 
@@ -32,7 +32,7 @@ class CortexcliAT040 < Formula
   end
 
   def install
-    bin.install "cortexcli.pkg" => "cortexcli"
+    bin.install "cortexcli"
     system "/usr/bin/xattr", "-dr", "com.apple.quarantine", bin/"cortexcli" if OS.mac?
   end
 
