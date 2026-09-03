@@ -1,5 +1,5 @@
 {
-  "version": "0.40.1",
+  "version": "0.40.0",
   "description": "Cortex CLI",
   "homepage": "https://docs-cortex.paloaltonetworks.com/",
   "license": {
@@ -8,8 +8,8 @@
   },
   "architecture": {
     "64bit": {
-      "url": "https://github.com/evyatarpalo/paloalto/releases/download/v0.40.1/cortexcli-0.38.1-windows-amd64.zip",
-      "hash": "d36a87fc0fe1c92b482bb436acdd7a81352399000b5c954b59d573407f06eb91"
+      "url": "https://github.com/evyatarpalo/paloalto/releases/download/v0.40.0/cortexcli-0.40.0-windows-amd64.zip",
+      "hash": "71abfdf88b300ef390989dc85496f3b4d2a55f3d661a06a754f22ff3c36b8836"
     }
   },
   "bin": "cortexcli.exe",
